@@ -44,7 +44,7 @@ Une fois dans le conteneur vous pouvez utiliser les commandes
 | /home/lgsm/rustserver update | Pour mettre a jour le serveur |
 | /home/lgsm/rustserver install | Pour installer le serveur |
 | /home/lgsm/rustserver console | Pour afficher le serveur |
-| /home/lgsm/rustserver mods-install rustoxide | Pour installer un mod exemple oxide. remplacer rustoxide par le nom du mod. Si l'on indique pas le mod une invite nous donnera la liste des mods possible et nous permettra de le saisir. |
+| /home/lgsm/rustserver mods-install | Pour installer un mod exemple oxide. Une invite nous donnera la liste des mods possible et vous permettra de le saisir. |
 | /home/lgsm/rustserver mods-update | Pour afficher le serveur |
 | /home/lgsm/rustserver mods-remove | Pour afficher le serveur |
 
@@ -57,7 +57,7 @@ Ou directement en dehors du conteneur
 | docker exec rust /home/lgsm/rustserver update | Pour mettre a jour le serveur |
 | docker exec rust /home/lgsm/rustserver install | Pour installer le serveur |
 | docker exec rust /home/lgsm/rustserver console | Pour afficher le serveur |
-| docker exec rust /home/lgsm/rustserver mods-install rustoxide | Pour installer un mod exemple oxide. remplacer rustoxide par le nom du mod. Si l'on indique pas le mod une invite nous donnera la liste des mods possible et nous permettra de le saisir. |
+| docker exec rust /home/lgsm/rustserver mods-install | Pour installer un mod exemple oxide. Une invite nous donnera la liste des mods possible et vous permettra de le saisir. |
 | docker exec rust /home/lgsm/rustserver mods-update | Pour afficher le serveur |
 | docker exec rust /home/lgsm/rustserver mods-remove | Pour afficher le serveur |
 
