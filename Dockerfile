@@ -22,7 +22,7 @@ COPY ./*.* /
 RUN chmod 755 /start.sh \
     && sed -i -e 's/\r$//' /start.sh
 
-RUN echo 'lgsm  ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+RUN echo 'lgsm  ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
     && usermod -G tty lgsm
 
 USER lgsm    
