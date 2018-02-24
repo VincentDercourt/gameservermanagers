@@ -18,7 +18,7 @@ fi
 sudo chown -R 1000:1000 /home/lgsm
 
 if [ ! -d "serverfiles" ]; then
-  yes Y | /home/lgsm/$serverName install
+  /home/lgsm/$serverName auto-install
 fi
 
 sudo chown -R 1000:1000 /home/lgsm
