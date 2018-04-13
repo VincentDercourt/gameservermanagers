@@ -3,7 +3,7 @@ FROM gameservermanagers/linuxgsm-docker:latest
 LABEL maintainer="contact@vincentdercourt.fr" \
 	  version=1.0 \
 	  description="Create a server with gameservermanagers"
-
+	  
 USER root
 
 workdir /home/lgsm
@@ -11,11 +11,13 @@ workdir /home/lgsm
 ENV serverName=rustserver
 ENV steamuser=anonymous
 ENV steampass=
+ENV serverUpdate=true
+ENV modeUpdate=true
 
 VOLUME /home/lgsm
 
 RUN apt-get update \
-    && apt-get install -y lib32z1 expect telnet sudo
+    && apt-get install -y lib32z1 expect telnet sudo libgdiplus
 
 COPY ./*.* /
 
