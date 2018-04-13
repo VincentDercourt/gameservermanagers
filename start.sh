@@ -25,10 +25,10 @@ sudo chown -R 1000:1000 /home/lgsm
 
 if($serverUpdate==true); then
 	yes Y | ./$serverName update
-done
+fi
 if($modeUpdate==true); then
 	yes Y | ./$serverName mods-update
-done
+fi
 
 yes Y | ./$serverName start
 
